@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SignUpActivity">
+
+    <View
+        android:id="@+id/tengahh"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:layout_below="@+id/tengahh"
+        android:textSize="30sp"
+        android:id="@+id/TV_register"
+        android:textColor="@color/putih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER CUI !!"
+        android:textStyle="bold"
+        android:layout_above="@+id/tengah"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:textColor="@color/putih"
+        android:id="@+id/edt_nama"
+        android:layout_below="@+id/TV_register"
+        android:hint="Masukkan Nama"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:textColor="@color/putih"
+        android:id="@+id/edt_email"
+        android:layout_below="@+id/edt_nama"
+        android:hint="Masukkan Email"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:textColor="@color/putih"
+        android:id="@+id/edt_pass"
+        android:layout_below="@+id/edt_email"
+        android:hint="Masukkan Password"
+        android:inputType="textPassword"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"/>
+    <EditText
+        android:textColor="@color/putih"
+        android:id="@+id/edt_konfirm"
+        android:layout_below="@+id/edt_pass"
+        android:hint="Konfirmasi Password"
+        android:inputType="textPassword"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:textColor="@color/putih"
+        android:id="@+id/btn_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:layout_below="@+id/edt_konfirm"
+        android:layout_centerHorizontal="true"
+        android:background="@color/birumuda"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_signup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:textColor="@color/putih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sudah punya akun?SIlahkan"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:textColor="@color/putih"
+            android:id="@+id/Text_Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</RelativeLayout>

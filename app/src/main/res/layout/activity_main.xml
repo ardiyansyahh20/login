@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/wallpaper">
+
+    <View
+        android:id="@+id/tengah"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:id="@+id/logo_spp"
+        android:src="@drawable/spp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_above="@+id/tengah"/>
+
+    <EditText
+        android:hint="Username"
+        android:inputType="text"
+        android:textColorHint="@color/colorAbuAbu"
+        android:id="@+id/edt_username"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tengah"/>
+
+    <EditText
+
+        android:hint="Password"
+        android:textColorHint="@color/colorAbuAbu"
+        android:inputType="textPassword"
+        android:id="@+id/edt_password"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/edt_username"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:textColor="@color/putih"
+        android:background="@color/birumuda"
+        android:id="@+id/login"
+        android:text="@string/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edt_password"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_below="@id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+    <TextView
+        android:textColor="@color/putih"
+        android:id="@+id/silahkan"
+        android:text="belum punya akun? Silahkan "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/login"/>
+
+        <TextView
+            android:textColor="@color/putih"
+            android:layout_marginTop="10dp"
+            android:text="Sign Up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:id="@+id/sign"/>
+
+    </LinearLayout>
+</RelativeLayout>
